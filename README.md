@@ -1,16 +1,19 @@
-<div align="center">
-    <a">English</a>
-    |
-    <a href="./README_CN.md">简体中文</a>
-</div>
+# HDU2025 神经网络与深度学习课程实验代码仓库
+> 本项目为HDU2025神经网络与深度学习课程的实验代码仓库
 
-# HDU2025 Neural Networks and Deep Learning Course Experiment Code Repository
-> This project is the experiment code repository for the HDU2025 Neural Networks and Deep Learning course
+## 实验列表
+- car_mile_predict: 基于MLP的汽车里程预测
+- flower_classification: 基于CNN的花卉图像分类
+- regulazation: 正则化方法在神经网络中的应用
+- sentiment_classification: 基于RNN的情感分类
+- attention: 基于Transformer的文本翻译
+- unsupervised: 对比PCA和VAE在图片压缩之间的效果差异
 
-## Experiment List
-- car_mile_predict: Car mileage prediction based on MLP
-- flower_classification: Flower image classification based on CNN
-- regulazation: Application of regularization methods in neural networks
-- sentiment_classification: Sentiment classification based on RNN
-- attention: Text translation based on Transformer
-- unsupervised: Comparing the effect differences between PCA and VAE in image compression
+## 环境配置
+```bash
+conda create -n dl_course python=3.10 -y
+conda activate dl_course
+# 安装emvironment.yaml中指定的依赖
+conda env create -f environment.yaml
+```
+
