@@ -1,5 +1,5 @@
 # HDU2025 神经网络与深度学习课程实验代码仓库
-> 本项目为HDU2025神经网络与深度学习课程的实验代码仓库
+> 本项目为HDU2025神经网络与深度学习课程的实验代码仓库, 将所有实验基于torch框架实现。使用lightning简化训练流程。
 
 ## 实验列表
 - car_mile_predict: 基于MLP的汽车里程预测
@@ -16,4 +16,5 @@ conda activate dl_course
 # 安装emvironment.yaml中指定的依赖
 conda env create -f environment.yaml
 ```
+
 
