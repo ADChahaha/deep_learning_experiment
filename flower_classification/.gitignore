@@ -1,0 +1,5 @@
+# 忽略docx/pdf实验报告
+*.docx
+*.pdf
+
+result.ipynb

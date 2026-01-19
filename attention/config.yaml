@@ -1,0 +1,31 @@
+trainer:
+  max_epochs: 60
+  check_val_every_n_epoch: 3
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:
+        save_top_k: 5
+        monitor: train_loss
+        mode: min
+  log_every_n_steps: 1
+
+model:
+  embedding_dim: 256
+  nhead: 8
+  encoder_num_layers: 3
+  decoder_num_layers: 3
+  lr: 1e-3
+  de_vocab_path: assets/vocabs/de_vocab.json
+  en_vocab_path: assets/vocabs/en_vocab.json
+  de_idx_vocab_path: assets/vocabs/de_idx_vocab.json
+  en_idx_vocab_path: assets/vocabs/en_idx_vocab.json
+  
+
+data:
+  batch_size: 64
+  num_workers: 12
+  max_seq_len: 32
+  train_path: assets/datasets/train/
+  val_path: assets/datasets/valid/
+  de_vocab_path: assets/vocabs/de_vocab.json
+  en_vocab_path: assets/vocabs/en_vocab.json

@@ -1,0 +1,73 @@
+# Python缓存和编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C扩展
+*.so
+
+# 打包/环境/构建相关
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 安装日志
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 单元测试/覆盖率
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook检查点
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# Pyre类型检查
+.pyre/
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# 数据/模型/图片/压缩包等
+*.zip
+*ubyte
+*.ckpt
+*.png
+*.jpg
+
+# 不上传所有docx和pdf文件
+*.docx
+*.doc
+*.pdf

@@ -1,0 +1,83 @@
+# lightning.pytorch==2.6.0
+seed_everything: 0
+trainer:
+  accelerator: auto
+  strategy: auto
+  devices: auto
+  num_nodes: 1
+  precision: null
+  logger: null
+  callbacks:
+  - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+    init_args:
+      dirpath: null
+      filename: null
+      monitor: train_loss
+      verbose: false
+      save_last: null
+      save_top_k: 5
+      save_on_exception: false
+      save_weights_only: false
+      mode: min
+      auto_insert_metric_name: true
+      every_n_train_steps: null
+      train_time_interval: null
+      every_n_epochs: null
+      save_on_train_epoch_end: null
+      enable_version_counter: true
+  fast_dev_run: false
+  max_epochs: 60
+  min_epochs: null
+  max_steps: -1
+  min_steps: null
+  max_time: null
+  limit_train_batches: null
+  limit_val_batches: null
+  limit_test_batches: null
+  limit_predict_batches: null
+  overfit_batches: 0.0
+  val_check_interval: null
+  check_val_every_n_epoch: 3
+  num_sanity_val_steps: null
+  log_every_n_steps: 1
+  enable_checkpointing: null
+  enable_progress_bar: null
+  enable_model_summary: null
+  accumulate_grad_batches: 1
+  gradient_clip_val: null
+  gradient_clip_algorithm: null
+  deterministic: null
+  benchmark: null
+  inference_mode: true
+  use_distributed_sampler: true
+  profiler: null
+  detect_anomaly: false
+  barebones: false
+  plugins: null
+  sync_batchnorm: false
+  reload_dataloaders_every_n_epochs: 0
+  default_root_dir: null
+  enable_autolog_hparams: true
+  model_registry: null
+model:
+  embedding_dim: 256
+  nhead: 8
+  encoder_num_layers: 3
+  decoder_num_layers: 3
+  lr: 0.001
+  de_vocab_path: assets/vocabs/de_vocab.json
+  de_idx_vocab_path: assets/vocabs/de_idx_vocab.json
+  en_vocab_path: assets/vocabs/en_vocab.json
+  en_idx_vocab_path: assets/vocabs/en_idx_vocab.json
+data:
+  batch_size: 64
+  num_workers: 12
+  max_seq_len: 32
+  train_path: assets/datasets/train/
+  val_path: assets/datasets/valid/
+  de_vocab_path: assets/vocabs/de_vocab.json
+  en_vocab_path: assets/vocabs/en_vocab.json
+optimizer: null
+lr_scheduler: null
+ckpt_path: null
+weights_only: null

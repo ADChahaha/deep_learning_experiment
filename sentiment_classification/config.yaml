@@ -1,0 +1,25 @@
+trainer:
+  max_epochs: 60
+  check_val_every_n_epoch: 5
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:
+        save_top_k: 5
+        monitor: val_loss
+        mode: min
+  log_every_n_steps: 1
+
+model:
+  lr: 1e-3
+  input_size: 100
+  hidden_size: 256
+  num_layers: 1
+  embedding_path: "data/glove.6B.100d.txt"
+
+data:
+  batch_size: 64
+  num_workers: 0
+  max_seq_len: 500
+  data_path: "data/aclImdb_v1.tar.gz"
+  ratio: 0.8
+  embedding_path: "data/glove.6B.100d.txt"

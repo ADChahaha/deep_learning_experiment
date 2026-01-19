@@ -1,0 +1,8 @@
+lightning_logs/
+asset/
+result.ipynb
+.DS_Store
+__pycache__/
+data/**
+*.docx
+*.pdf

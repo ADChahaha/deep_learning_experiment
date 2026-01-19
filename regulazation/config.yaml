@@ -1,0 +1,21 @@
+trainer:
+  max_epochs: 30
+  check_val_every_n_epoch: 1
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:
+        save_top_k: 5
+        monitor: val_loss
+        mode: min
+  log_every_n_steps: 1
+  default_root_dir: ./lightning_logs/L2Loss
+
+model:
+  lr: 1e-3
+  use_dropout: False
+  use_bn: False
+  weight_decay: 1e-5
+
+data:
+  batch_size: 128
+  num_workers: 9

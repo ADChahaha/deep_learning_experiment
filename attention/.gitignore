@@ -1,0 +1,7 @@
+# 只上传实验要求ipynb和README
+result.ipynb
+实验报告.ipynb
+*.docx
+*.pdf
+*.ckpt
+assets/**
