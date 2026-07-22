@@ -1,0 +1,25 @@
+{
+  "train_loss_history": [
+    1.797148717261973,
+    0.9431254537114517,
+    0.5722476552327067,
+    0.38842620737748884,
+    0.3064760891644315,
+    0.26304828324940444,
+    0.23467323874617046,
+    0.21361018693878678,
+    0.2088716858845265,
+    0.20363122852814328
+  ],
+  "miou_history": [
+    0.6884558279190927
+  ],
+  "final_train_loss": 0.20363122852814328,
+  "final_miou": 0.6884558279190927,
+  "checkpoint_path": "C:\\Users\\14195\\claude_segexp\\remote_runs\\exp2_h7TjL0\\checkpoints\\deeplabv3_resnet101_voc2012.pth",
+  "voc_root": "C:\\Users\\14195\\claude_segexp\\data\\VOCdevkit\\VOC2012",
+  "device": "cuda",
+  "train_seconds": 2681.7442967891693,
+  "num_train_samples": 1464,
+  "steps_per_epoch": 732
+}

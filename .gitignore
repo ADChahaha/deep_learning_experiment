@@ -67,7 +67,19 @@ coverage.xml
 *.png
 *.jpg
 
+# 但允许提交实验报告用截图
+!实验1-p/assets/
+!实验1-p/assets/*.png
+
 # 不上传所有docx和pdf文件
 *.docx
 *.doc
 *.pdf
+
+# 个人提交材料和报告渲染产物
+**/ref_report_media/
+**/report_render/
+
+# TensorBoard / Lightning 日志
+runs/
+lightning_logs/

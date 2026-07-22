@@ -1,0 +1,48 @@
+{
+  "seed": 42,
+  "data": {
+    "root": "data",
+    "year": "2012",
+    "download": true,
+    "batch_size": 2,
+    "num_workers": 2,
+    "crop_size": 513,
+    "image_mean": [103.53, 116.28, 123.675],
+    "image_std": [57.375, 57.12, 58.395],
+    "min_scale": 0.5,
+    "max_scale": 2.0,
+    "ignore_label": 255
+  },
+  "model": {
+    "name": "deeplab_v3_s8",
+    "num_classes": 21,
+    "pretrained": true,
+    "freeze_bn": true,
+    "pretrained_checkpoint": ""
+  },
+  "train": {
+    "epochs": 10,
+    "lr": 0.001,
+    "lr_type": "cos",
+    "base_lr": 0.001,
+    "lr_decay_step": 920,
+    "lr_decay_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0001,
+    "log_every": 20,
+    "loss_scale": 2048,
+    "accumulation_steps": 8
+  },
+  "eval": {
+    "scales": [0.75, 1.0, 1.25],
+    "flip": true,
+    "batch_size": 1,
+    "num_visualizations": 3
+  },
+  "paths": {
+    "checkpoint_dir": "checkpoints",
+    "checkpoint_name": "deeplabv3_resnet101_voc2012.pth",
+    "output_dir": "outputs",
+    "visualization_dir": "outputs/visualizations"
+  }
+}

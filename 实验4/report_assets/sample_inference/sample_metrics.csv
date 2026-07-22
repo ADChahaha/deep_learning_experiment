@@ -1,0 +1,10 @@
+dataset,sample,width,height,device,seconds,mae,iou_at_0.5,prediction
+COD10K,COD10K-CAM-1-Aquatic-13-Pipefish-554,700,525,mps,0.3913,0.0083,0.7694,report_assets/sample_inference/predictions/COD10K_COD10K-CAM-1-Aquatic-13-Pipefish-554.png
+COD10K,COD10K-CAM-1-Aquatic-13-Pipefish-614,1024,768,mps,0.0242,0.0031,0.5126,report_assets/sample_inference/predictions/COD10K_COD10K-CAM-1-Aquatic-13-Pipefish-614.png
+COD10K,COD10K-CAM-1-Aquatic-6-Fish-186,1024,683,mps,0.0177,0.0070,0.9298,report_assets/sample_inference/predictions/COD10K_COD10K-CAM-1-Aquatic-6-Fish-186.png
+COD10K,COD10K-CAM-2-Terrestrial-23-Cat-1328,576,1024,mps,0.0150,0.0230,0.9169,report_assets/sample_inference/predictions/COD10K_COD10K-CAM-2-Terrestrial-23-Cat-1328.png
+COD10K,COD10K-CAM-3-Flying-53-Bird-3196,1024,683,mps,0.0152,0.0070,0.8672,report_assets/sample_inference/predictions/COD10K_COD10K-CAM-3-Flying-53-Bird-3196.png
+COD10K,COD10K-CAM-3-Flying-64-Moth-4467,1024,684,mps,0.0151,0.0269,0.7390,report_assets/sample_inference/predictions/COD10K_COD10K-CAM-3-Flying-64-Moth-4467.png
+COD10K,COD10K-CAM-1-Aquatic-18-StarFish-1178,1024,684,mps,0.0152,0.0312,0.8060,report_assets/sample_inference/predictions/COD10K_COD10K-CAM-1-Aquatic-18-StarFish-1178.png
+COD10K,COD10K-CAM-1-Aquatic-15-SeaHorse-1003,1023,670,mps,0.0151,0.0151,0.8888,report_assets/sample_inference/predictions/COD10K_COD10K-CAM-1-Aquatic-15-SeaHorse-1003.png
+COD10K,COD10K-CAM-4-Amphibian-68-Toad-4964,1023,682,mps,0.0149,0.0194,0.8981,report_assets/sample_inference/predictions/COD10K_COD10K-CAM-4-Amphibian-68-Toad-4964.png

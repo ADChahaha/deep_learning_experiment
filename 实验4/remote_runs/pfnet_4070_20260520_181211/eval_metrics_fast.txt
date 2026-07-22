@@ -1,0 +1,3 @@
+CHAMELEON: count=76, missing_gt=0, MAE=0.032175, adpF=0.827039, maxF=0.867838
+CAMO: count=250, missing_gt=0, MAE=0.088660, adpF=0.734911, maxF=0.799846
+COD10K: count=2026, missing_gt=0, MAE=0.041050, adpF=0.668104, maxF=0.755469
